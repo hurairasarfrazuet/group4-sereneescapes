@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resorts</title>
+</head>
+<body>
+    <nav id="nav">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fas fa-palmtree"></i></div>
+                <span class="logo-text">Serene Escape</span>
+            </a> 
+
+            <div class="nav-links">
+                <a href="resorts.html" class="nav-link">Resorts</a>
+                <a href="#lifestyle" class="nav-link">Experiences</a>
+                <a href="#offers" class="nav-link">Offers</a>
+                <a href="#resorts" class="nav-link">About us</a>
+                <button class="btn-primary">Book Now</button>
+            </div>
+
+            <button id="mobile-toggle" style="background:none; border:none; cursor:pointer;" class="md-hidden">
+                <i class="fas fa-bars text-white" id="menu-icon" style="font-size: 1.5rem;"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="video">
+            <iframe src="img/WhatsApp Video 2026-01-01 at 1.10.48 PM.mp4" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div class="resort-grid" style="margin: 10px 30px 20px 30px;">
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Bora Bora.jpeg" class="card-img" alt="Bora Bora">
+                <div class="badge">Lagoon Bungalow</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i>Bora Bora</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Pearl Horizon Resort</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$920</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Seychelles.jpeg" class="card-img" alt="Seychelles">
+                <div class="badge">Private Island</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i>Seychelles</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Coral Crown Escape</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$780</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Mauritus.jpeg" class="card-img" alt="Mauritus">
+                <div class="badge">Beachfront Luxury</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Mauritus</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Blue Palm Cove</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$560</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="resort-grid" style="margin: 10px 30px 20px 30px;" >
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Fiji Islands.jpeg" class="card-img" alt="Fiji Islands">
+                <div class="badge">Secluded Paradise</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i>Fiji Islands</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Sunreef hideaway</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$690</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Phuket.png" class="card-img" alt="Phuket, Thiland">
+                <div class="badge">Cliffside Resort</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i>Phuket, Thailand</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Andaman Sky Retreat</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$380</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Krabi, Thailand.jpg" class="card-img" alt="Krabi, Thailand">
+                <div class="badge">Limestone Views</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i>Krabi, Thailand</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Emerald Tide Resort</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$410</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="resort-grid" style="margin: 10px 30px 20px 30px;">
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Langkawi, Malaysia.png" class="card-img" alt="Langkawi, Malaysia">
+                <div class="badge">Rainforest & Sea</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Langkawi, Malaysia</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Misty Bay Haven</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$360</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Palawan, Philippines.png" class="card-img" alt="Palawan, Philippines">
+                <div class="badge">Eco Luxury</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Palawan, Philippines</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Crystal Shore Lodge</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$450</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/El Nido, Philippines.jpg" class="card-img" alt="El Nido, Philippines">
+                <div class="badge">Island Villas</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i>El Nido, Philippines</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Hidden Lagoon Escape</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$350</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="resort-grid" style="margin: 10px 30px 20px 30px;">
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Zanzibar, Tanzania.jpg" class="card-img" alt="Zanzibar, Tanzania">
+                <div class="badge">White Sand Beach</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i>Zanzibar, Tanzania</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Swahili Pearl Resort</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$340</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Turks & Caicos.jpg" class="card-img" alt="Turks & Caicos">
+                <div class="badge">Caribbean Luxury</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i>Turks & Caicos</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Azure Palm Resort</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$720</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Whitsunday Islands, Australia.jpg" class="card-img" alt="Whitsunday Islands, Australia">
+                <div class="badge">Coral Sea View</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i>Whitsunday Islands, Australia</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Horizon Reef Retreat</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$680</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="resort-grid"style="margin: 10px 30px 20px 30px;">
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Santorini, Greece.avif" class="card-img" alt="Santorini, Greece">
+                <div class="badge">Cliffside Suite</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i>Santorini, Greece</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Aegean Glow Villast</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$610</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Tahiti.jpg" class="card-img" alt="Tahiti">
+                <div class="badge">Sunset Villas</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i>Tahiti</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Moana Pearl Resort</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$890</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Hawaii, USA.png" class="card-img" alt="Hawaii, USA">
+                <div class="badge">Oceanfront Resort</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i>Hawaii, USA</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Pacific Breeze Retreat</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$570</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="resort-grid"style="margin: 10px 30px 20px 30px;">
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Banff, Canada.jpg" class="card-img" alt="Banff, Canada">
+                <div class="badge">Mountain Retreat</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i>Banff, Canada</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Glacier View Resort</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$540</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Aspen, USA.jpg" class="card-img" alt="Aspen, USA">
+                <div class="badge">Ski-In Ski-Out</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i>Aspen, USA</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Snowfall Chalet</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$710</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="img/Patagonia, Chile.webp" class="card-img" alt="Patagonia, Chile">
+                <div class="badge">Wilderne</div>
+            </div>
+            <div class="card-body">
+                <div class="card-meta">
+                    <div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i>Patagonia, Chile</p>
+                        <h4 style="font-size:1.5rem; font-weight:700;">Andean Horizon Retreat</h4>
+                    </div>
+                    <div style="text-align:right">
+                        <p class="price">$480</p>
+                        <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
+                    </div>
+                </div>
+                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo" style="margin-bottom:1.5rem;">
+                        <div class="logo-icon"><i class="fas fa-palmtree"></i></div>
+                        <span class="logo-text" style="color:var(--royal-blue)">Serene Escape</span>
+                    </div>
+                    <p style="color:var(--slate-500)">Curating tranquil destinations since 2012.</p>
+                </div>
+                <div>
+                    <h6 style="font-weight:800; text-transform:uppercase; font-size:0.75rem;">Destinations</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">Maldives</a></li>
+                        <li><a href="#">Swiss Alps</a></li>
+                        <li><a href="#">Bali</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 style="font-weight:800; text-transform:uppercase; font-size:0.75rem;">Company</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="padding:2rem 0; border-top:1px solid var(--slate-200); color:var(--slate-400); font-size:0.875rem; text-align:center;">
+                <p>© 2024 Serene Escape Luxury Resorts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+       
+
+
+   <a href="#"><button class="btn">Back to top</button></a> 
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    <script>
+        const navbar = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+                menuIcon.classList.replace('text-white', 'text-slate-900');
+            } else {
+                nav.classList.remove('scrolled');
+                menuIcon.classList.replace('text-slate-900', 'text-white');
+            }
+        });
+    </script>
+</body>
+</html>
