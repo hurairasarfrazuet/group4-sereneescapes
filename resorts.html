@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resorts.css">
     <title>Resorts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="img/icon_logo.png" type="image/x-icon">
 </head>
+
 <body>
     <nav id="nav">
         <div class="container flex justify-between items-center">
             <a href="index.html" class="logo">
-                <div class="logo-icon"><i class="fas fa-palmtree"></i></div>
-                <span class="logo-text">Serene Escape</span>
-            </a> 
-
-            <div class="nav-links">
+                <img src="img/icon_logo.png" class="icon"> <!--Serene Escapes -->
+                <img src="img/text_logo.png" class="text-logo">
+            </a>
+            <div class="nav-links" id="menulist">
+                <a href="index.html" class="nav-link">Home</a>
                 <a href="resorts.html" class="nav-link">Resorts</a>
-                <a href="#lifestyle" class="nav-link">Experiences</a>
-                <a href="#offers" class="nav-link">Offers</a>
-                <a href="#resorts" class="nav-link">About us</a>
-                <button class="btn-primary">Book Now</button>
+                <a href="offers.html" class="nav-link">Packages</a>
+                <a href="contact.html" class="nav-link">Contact us</a>
+                <a href="AboutUs.html" class="nav-link">About us</a>
+                <!-- <a href="sign-up.html" class="nav-link">Sign up</a> -->
+                <a href="login.html" class="nav-link loginbtn"><i class="fas fa-solid fa-user" ></i><p>Login</p></a>
+                <!-- <a href="booking.html"><button class="btn-primary">Book Now</button></a> -->
             </div>
 
-            <button id="mobile-toggle" style="background:none; border:none; cursor:pointer;" class="md-hidden">
-                <i class="fas fa-bars text-white" id="menu-icon" style="font-size: 1.5rem;"></i>
-            </button>
+            <div style="background:none; border:none; cursor:pointer;" class="md-hidden">
+                <i class="fas fa-bars text-white" onclick="toggleMenu()" style="font-size: 1.5rem;"></i>
+            </div>
         </div>
     </nav>
-    <div class="container">
+    <!-- <div class="container"> -->
         <div class="video">
-            <iframe src="img/WhatsApp Video 2026-01-01 at 1.10.48 PM.mp4" frameborder="0"></iframe>
+            <!-- <iframe src="img/WhatsApp Video 2026-01-01 at 1.10.48 PM.mp4"  frameborder="0" aria-controls="0"></iframe> -->
+            <video src="img/video.mp4" autoplay playsinline muted loop></video>
         </div>
-    </div>
+    <!-- </div> -->
 
     <div class="resort-grid" style="margin: 10px 30px 20px 30px;">
         <div class="card">
@@ -50,7 +57,9 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
         <div class="card">
@@ -69,7 +78,9 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
         <div class="card">
@@ -88,12 +99,11 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
-    </div>
-
-    <div class="resort-grid" style="margin: 10px 30px 20px 30px;" >
         <div class="card">
             <div class="card-img-wrapper">
                 <img src="img/Fiji Islands.jpeg" class="card-img" alt="Fiji Islands">
@@ -110,7 +120,9 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
         <div class="card">
@@ -129,7 +141,9 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
         <div class="card">
@@ -148,12 +162,11 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
-    </div>
-
-    <div class="resort-grid" style="margin: 10px 30px 20px 30px;">
         <div class="card">
             <div class="card-img-wrapper">
                 <img src="img/Langkawi, Malaysia.png" class="card-img" alt="Langkawi, Malaysia">
@@ -170,7 +183,9 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
         <div class="card">
@@ -189,7 +204,9 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
         <div class="card">
@@ -208,12 +225,11 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
-    </div>
-
-    <div class="resort-grid" style="margin: 10px 30px 20px 30px;">
         <div class="card">
             <div class="card-img-wrapper">
                 <img src="img/Zanzibar, Tanzania.jpg" class="card-img" alt="Zanzibar, Tanzania">
@@ -230,7 +246,9 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
         <div class="card">
@@ -249,7 +267,9 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
         <div class="card">
@@ -268,12 +288,11 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
-    </div>
-
-    <div class="resort-grid"style="margin: 10px 30px 20px 30px;">
         <div class="card">
             <div class="card-img-wrapper">
                 <img src="img/Santorini, Greece.avif" class="card-img" alt="Santorini, Greece">
@@ -290,7 +309,9 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
         <div class="card">
@@ -309,7 +330,9 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
         <div class="card">
@@ -328,13 +351,11 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
-    </div>
-
-
-    <div class="resort-grid"style="margin: 10px 30px 20px 30px;">
         <div class="card">
             <div class="card-img-wrapper">
                 <img src="img/Banff, Canada.jpg" class="card-img" alt="Banff, Canada">
@@ -351,7 +372,9 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
         <div class="card">
@@ -370,7 +393,9 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
         <div class="card">
@@ -389,64 +414,94 @@
                         <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                     </div>
                 </div>
-                <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                <a href="booking.html"><button class="btn-primary"
+                        style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                        This Experience</button></a>
             </div>
         </div>
     </div>
 
 
 
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <!-- Brand -->
+            <div class="footer-brand">
                 <div>
-                    <div class="logo" style="margin-bottom:1.5rem;">
-                        <div class="logo-icon"><i class="fas fa-palmtree"></i></div>
-                        <span class="logo-text" style="color:var(--royal-blue)">Serene Escape</span>
-                    </div>
-                    <p style="color:var(--slate-500)">Curating tranquil destinations since 2012.</p>
+                    <img src="img/icon_logo.png" alt="Logo">
+                    <img src="img/text_logo.png" alt="Logo">
                 </div>
-                <div>
-                    <h6 style="font-weight:800; text-transform:uppercase; font-size:0.75rem;">Destinations</h6>
-                    <ul class="footer-list">
-                        <li><a href="#">Maldives</a></li>
-                        <li><a href="#">Swiss Alps</a></li>
-                        <li><a href="#">Bali</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h6 style="font-weight:800; text-transform:uppercase; font-size:0.75rem;">Company</h6>
-                    <ul class="footer-list">
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+                <p>
+                    Discover handpicked luxury resorts where comfort meets nature.
+                    Your perfect escape starts here.
+                </p>
             </div>
-            <div style="padding:2rem 0; border-top:1px solid var(--slate-200); color:var(--slate-400); font-size:0.875rem; text-align:center;">
-                <p>© 2024 Serene Escape Luxury Resorts. All rights reserved.</p>
+
+            <!-- Links -->
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resorts.html">Resorts</a></li>
+                    <li><a href="offers.html">Packages</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-envelope"></i> contact@sereneescapes.com</li>
+                    <li><i class="fas fa-phone"></i> +92 300 1234567</li>
+                    <li>
+                        <i class="fas fa-location-dot"></i>
+                        5402 Caliper Road,
+                        NewYork City,
+                        Northen America, 5560
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            <p>© 2026 Serene Escapes. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </footer>
-       
+    <a href="#"><button class="btn">Back to top</button></a>
 
 
-   <a href="#"><button class="btn">Back to top</button></a> 
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
     <script>
-        const navbar = document.getElementById('nav');
+        const nav = document.getElementById('nav');
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight = "0px";
+        function toggleMenu() {
+            if (menulist.style.maxHeight === "0px") {
+                menulist.style.maxHeight = "500px";
+            }
+            else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+        // Scroll listener for Navbar
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 nav.classList.add('scrolled');
@@ -458,4 +513,5 @@
         });
     </script>
 </body>
+
 </html>

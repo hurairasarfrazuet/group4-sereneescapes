@@ -1,57 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/icon_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Home</title>
 </head>
+
 <body>
     <nav id="navbar">
         <div class="container flex justify-between items-center">
             <a href="index.html" class="logo">
-                <div class="logo-icon"><i class="fas fa-palmtree"></i></div>
-                <span class="logo-text">Serene Escape</span>
-            </a> 
-            
-
-            <div class="nav-links">
+                <img src="img/icon_logo.png" class="icon">
+                <img src="img/text_logo.png" class="text-logo">
+            </a>
+            <div class="nav-links" id="menulist">
+                <a href="index.html" class="nav-link">Home</a>
                 <a href="resorts.html" class="nav-link">Resorts</a>
-                <a href="#lifestyle" class="nav-link">Experiences</a>
-                <a href="#offers" class="nav-link">Offers</a>
-                <a href="#resorts" class="nav-link">About us</a>
-                <button class="btn-primary">Book Now</button>
+                <a href="offers.html" class="nav-link">Packages</a>
+                <a href="contact.html" class="nav-link">Contact us</a>
+                <a href="AboutUs.html" class="nav-link">About us</a>
+                <!-- <a href="sign-up.html" class="nav-link">Sign up</a> -->
+                <a href="login.html" class="nav-link loginbtn"><i class="fas fa-solid fa-user" ></i><p>Login</p></a>
+                <!-- <a href="booking.html"><button class="btn-primary">Book Now</button></a> -->
             </div>
 
-            <button id="mobile-toggle" style="background:none; border:none; cursor:pointer;" class="md-hidden">
-                <i class="fas fa-bars text-white" id="menu-icon" style="font-size: 1.5rem;"></i>
-            </button>
+            <div id="mobile-toggle" style="background:none; border:none; cursor:pointer;" class="md-hidden">
+                <i class="fas fa-bars text-white" onclick="toggleMenu()" style="font-size: 1.5rem;"></i>
+            </div>
         </div>
     </nav>
-
-    <div id="mobile-menu">
-        <div class="flex justify-between items-center">
-            <span style="color:var(--royal-blue); font-weight:800; font-size:1.5rem;">Serene Escape</span>
-            <button id="close-menu" style="background:none; border:none; font-size:2rem;">&times;</button>
-        </div>
-        <div style="display:flex; flex-direction:column; gap:2rem; margin-top:4rem; font-size:1.5rem; font-weight:600;">
-            <a href="#resorts" style="text-decoration:none; color:var(--slate-800);">Resorts</a>
-            <a href="#lifestyle" style="text-decoration:none; color:var(--slate-800);">Experiences</a>
-            <a href="#offers" style="text-decoration:none; color:var(--slate-800);">Offers</a>
-            <button class="btn-primary" style="padding:1.5rem;">Book Your Stay</button>
-        </div>
-    </div>
-
     <header>
         <div class="hero-bg">
-            <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=2000" alt="Resort">
+            <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=2000"
+                alt="Resort">
             <div class="hero-gradient"></div>
         </div>
 
         <div class="hero-content">
             <h1 class="hero-title">Find Your <span>Peace</span></h1>
-            <p class="hero-subtitle">Handpicked luxury resorts where nature meets sophistication. Your journey to tranquility begins here.</p>
-            
+            <p class="hero-subtitle">Handpicked luxury resorts where nature meets sophistication. Your journey to
+                tranquility begins here.</p>
+
             <div class="search-bar">
                 <div class="search-item">
                     <i class="fas fa-map-marker-alt"></i>
@@ -88,7 +81,8 @@
                     <span class="subtitle-caps">Our Collection</span>
                     <h3 class="main-title">Handpicked destinations for the discerning traveler</h3>
                 </div>
-                <a href="resorts.html" style="color:var(--royal-blue); font-weight:700; text-decoration:none; border-bottom:2px solid var(--royal-blue); padding-bottom:4px;">
+                <a href="resorts.html"
+                    style="color:var(--royal-blue); font-weight:700; text-decoration:none; border-bottom:2px solid var(--royal-blue); padding-bottom:4px;">
                     View All Resorts <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i>
                 </a>
             </div>
@@ -111,14 +105,17 @@
                                 <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                             </div>
                         </div>
-                        <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                        <a href="booking.html"><button class="btn-primary"
+                                style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                                This Experience</button></a>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1548777123-e216912df7d8?auto=format&fit=crop&q=80&w=800" class="card-img" alt="Swiss Alps">
+                        <img src="https://images.unsplash.com/photo-1548777123-e216912df7d8?auto=format&fit=crop&q=80&w=800"
+                            class="card-img" alt="Swiss Alps">
                         <div class="badge">Alpine Luxury</div>
                     </div>
                     <div class="card-body">
@@ -132,14 +129,17 @@
                                 <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                             </div>
                         </div>
-                        <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                        <a href="booking.html"><button class="btn-primary"
+                                style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                                This Experience</button></a>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=800" class="card-img" alt="Bali">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=800"
+                            class="card-img" alt="Bali">
                         <div class="badge">Eco-Friendly</div>
                     </div>
                     <div class="card-body">
@@ -153,7 +153,9 @@
                                 <p style="font-size:0.75rem; color:var(--slate-400);">per night</p>
                             </div>
                         </div>
-                        <button class="btn-primary" style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book This Experience</button>
+                        <a href="booking.html"><button class="btn-primary"
+                                style="width:100%; background:none; border:2px solid var(--slate-100); color:var(--slate-700); box-shadow:none;">Book
+                                This Experience</button></a>
                     </div>
                 </div>
             </div>
@@ -162,58 +164,98 @@
 
     <section id="offers" class="section-padding">
         <div class="container">
-            <div style="background:var(--royal-blue); border-radius:3rem; padding:4rem; text-align:center; color:white; position:relative; overflow:hidden;">
+            <div
+                style="background:var(--royal-blue); border-radius:3rem; padding:4rem; text-align:center; color:white; position:relative; overflow:hidden;">
                 <h3 style="font-size:3rem; font-weight:800; margin-bottom:1rem;">Join our Inner Circle</h3>
-                <p style="font-size:1.25rem; opacity:0.9; margin-bottom:2.5rem; max-width:40rem; margin-inline:auto;">Receive exclusive offers and early access to new resorts.</p>
-                <div style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; max-width:500px; margin:0 auto;">
-                    <input type="email" placeholder="Enter your email" style="padding:1rem 2rem; border-radius:1rem; border:none; flex:1; min-width:250px;">
+                <p style="font-size:1.25rem; opacity:0.9; margin-bottom:2.5rem; max-width:40rem; margin-inline:auto;">
+                    Receive exclusive offers and early access to new resorts.</p>
+                <div
+                    style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; max-width:500px; margin:0 auto;">
+                    <input type="email" placeholder="Enter your email"
+                        style="padding:1rem 2rem; border-radius:1rem; border:none; flex:1; min-width:250px;">
                     <button class="btn-primary" style="background:var(--slate-900);">Subscribe</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
+
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <!-- Brand -->
+            <div class="footer-brand">
                 <div>
-                    <div class="logo" style="margin-bottom:1.5rem;">
-                        <div class="logo-icon"><i class="fas fa-palmtree"></i></div>
-                        <span class="logo-text" style="color:var(--royal-blue)">Serene Escape</span>
-                    </div>
-                    <p style="color:var(--slate-500)">Curating tranquil destinations since 2012.</p>
+                    <img src="img/icon_logo.png" alt="Logo">
+                    <img src="img/text_logo.png" alt="Logo">
                 </div>
-                <div>
-                    <h6 style="font-weight:800; text-transform:uppercase; font-size:0.75rem;">Destinations</h6>
-                    <ul class="footer-list">
-                        <li><a href="#">Maldives</a></li>
-                        <li><a href="#">Swiss Alps</a></li>
-                        <li><a href="#">Bali</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h6 style="font-weight:800; text-transform:uppercase; font-size:0.75rem;">Company</h6>
-                    <ul class="footer-list">
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+                <p>
+                    Discover handpicked luxury resorts where comfort meets nature.
+                    Your perfect escape starts here.
+                </p>
             </div>
-            <div style="padding:2rem 0; border-top:1px solid var(--slate-200); color:var(--slate-400); font-size:0.875rem; text-align:center;">
-                <p>© 2024 Serene Escape Luxury Resorts. All rights reserved.</p>
+
+            <!-- Links -->
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resorts.html">Resorts</a></li>
+                    <li><a href="offers.html">Packages</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-envelope"></i> contact@sereneescapes.com</li>
+                    <li><i class="fas fa-phone"></i> +92 300 1234567</li>
+                    <li>
+                        <i class="fas fa-location-dot"></i>
+                        5402 Caliper Road,
+                        NewYork City,
+                        Northen America, 5560
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            <p>© 2026 Serene Escapes. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </footer>
 
     <script>
         const navbar = document.getElementById('navbar');
-        const mobileToggle = document.getElementById('mobile-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const closeMenu = document.getElementById('close-menu');
-        const menuIcon = document.getElementById('menu-icon');
-
-        // Scroll listener for Navbar
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight = "0px";
+        function toggleMenu() {
+            if (menulist.style.maxHeight === "0px") {
+                menulist.style.maxHeight = "500px";
+            }
+            else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
@@ -223,19 +265,10 @@
                 menuIcon.classList.replace('text-slate-900', 'text-white');
             }
         });
-
-        // Mobile menu handlers
-        mobileToggle.addEventListener('click', () => {
-            mobileMenu.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        });
-
-        closeMenu.addEventListener('click', () => {
-            mobileMenu.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        });
     </script>
 </body>
+
 </html>
 </body>
+
 </html>

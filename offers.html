@@ -4,47 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services- Serene Escapes</title>
+    <title>Exclusive Packages - Serene Escapes</title>
+    <link rel="shortcut icon" href="img/icon_logo.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="offers_style.css">
 </head>
 
 <body>
-
-    <!-- Shared Navigation -->
-    <nav id="navbar">
-        <div class="container flex-nav">
+    <nav id="nav">
+        <div class="container flex justify-between items-center">
             <a href="index.html" class="logo">
                 <img src="img/icon_logo.png" class="icon"> <!--Serene Escapes -->
                 <img src="img/text_logo.png" class="text-logo">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="menulist">
                 <a href="index.html" class="nav-link">Home</a>
-                <a href="#lifestyle" class="nav-link">Experiences</a>
                 <a href="resorts.html" class="nav-link">Resorts</a>
-                <a href="#" class="nav-link">Contact us</a>
-                <a href="#" class="btn-nav">Book Now</a>
+                <a href="offers.html" class="nav-link">Packages</a>
+                <a href="contact.html" class="nav-link">Contact us</a>
+                <a href="AboutUs.html" class="nav-link">About us</a>
+                <!-- <a href="sign-up.html" class="nav-link">Sign up</a> -->
+                <a href="login.html" class="nav-link loginbtn"><i class=" fa-solid fa-user" ></i><p>Login</p></a>
+                <!-- <a href="booking.html"><button class="btn-primary">Book Now</button></a> -->
             </div>
-            <div id="mobile-toggle">
-                <i class="fas fa-bars"></i>
+
+            <div style="background:none; border:none; cursor:pointer;" class="md-hidden">
+                <i class="fas fa-bars text-white" onclick="toggleMenu()" style="font-size: 1.5rem;"></i>
             </div>
         </div>
     </nav>
-
     <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu">
-        <i class="fas fa-times" id="close-menu"></i>
-        <a href="s.html" class="nav-link">Home</a>
-        <a href="#" class="nav-link">Resorts</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <button href="#" class="btn-primary">Book Now</button>
-    </div>
-
-
     <main>
         <div class="hero-section">
             <div class="hero-text">
-                <h1>Our Services</h1>
+                <h1>Packages & Services</h1>
                 <p>Elevating your travel experience with bespoke packages and world class amenities</p>
                 <p>in the world's most captivating locations.</p>
             </div>
@@ -55,7 +48,7 @@
             <div class="cards-container">
                 <div class="card">
                     <h3>The Essential Escape</h3>
-                    <p style="color: #6e6e6e;"><span class="price">$1,200</span> /4 days</p>
+                    <p style="color: #6e6e6e;"><span class="price">$1,200</span> /4 nights</p>
                     <p style="color: var(--slate-400)">Perfect for solo travelers or couples seeking a budget-friendly
                         experience.</p>
                     <ul class="feature-list">
@@ -70,7 +63,7 @@
 
                 <div class="card featured">
                     <h3>Signature Serenity</h3>
-                    <p style="color: #6e6e6e;"><span class="price">$2,000</span> /4 days</p>
+                    <p style="color: #6e6e6e;"><span class="price">$2,000</span> /4 nights</p>
                     <p style="color: var(--slate-400)">Enjoy a comfortable stay with all essential amenities included.
                     </p>
                     <ul class="feature-list">
@@ -85,7 +78,7 @@
 
                 <div class="card">
                     <h3>The Royal Retreat</h3>
-                    <p style="color: #6e6e6e;"><span class="price">$4,000</span> /4 days</p>
+                    <p style="color: #6e6e6e;"><span class="price">$4,000</span> /4 nights</p>
                     <p style="color: var(--slate-400)">Experience luxury and exclusivity with premium services and
                         amenities.</p>
                     <ul class="feature-list">
@@ -150,71 +143,92 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="footer-container">
-            <div class="footergrid">
-                <div class="footer title">
-                    <!-- <h2>Serene Escapes</h2> -->
-                    <a href="#" class="logo">
-                        <img src="img/serene escapes.png" class="icon-footer">
-                    </a>
-                    <p>Crafting unforgettable memories in the most beautiful corners of the Earth since 2025.</p>
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+                <div>
+                    <img src="img/icon_logo.png" alt="Logo">
+                    <img src="img/text_logo.png" alt="Logo">
                 </div>
-                <div class="footer experiences">
-                    <h3>Experiences</h3>
-                    <ul class="footer-list">
-                        <li><a href="#">Beachfronts</a></li>
-                        <li><a href="#">Mountains</a></li>
-                        <li><a href="#">Eco Lodges</a></li>
-                    </ul>
-                </div>
-                <div class="footer company">
-                    <h3>Company</h3>
-                    <ul class="footer-list">
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blogs</a></li>
-                    </ul>
-                </div>
-                <div class="footer contact">
-                    <h3>Contact</h3>
-                    <ul class="footer-list">
-                        <li><a href="#">Contact Support</a></li>
-                        <li><a href="#">Partner With Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
+                <p>
+                    Discover handpicked luxury resorts where comfort meets nature.
+                    Your perfect escape starts here.
+                </p>
             </div>
-            <p class="footer-note">© 2025 Serene Escapes. All rights reserved.</p>
+
+            <!-- Links -->
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resorts.html">Resorts</a></li>
+                    <li><a href="offers.html">Packages</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-envelope"></i> contact@sereneescapes.com</li>
+                    <li><i class="fas fa-phone"></i> +92 300 1234567</li>
+                    <li>
+                        <i class="fas fa-location-dot"></i>
+                        5402 Caliper Road,
+                        NewYork City,
+                        Northen America, 5560
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            <p>© 2026 Serene Escapes. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
-
 </body>
 <script>
-    const navbar = document.getElementById('navbar');
-    const mobileToggle = document.getElementById('mobile-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const closeMenu = document.getElementById('close-menu');
-
-    // Scroll listener for Navbar
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-
-    // Mobile Menu Interaction
-    mobileToggle.addEventListener('click', () => {
-        mobileMenu.style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-    });
-
-    closeMenu.addEventListener('click', () => {
-        mobileMenu.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    });
-</script>
+        const nav = document.getElementById('nav');
+        let menulist = document.getElementById("menulist")
+            menulist.style.maxHeight = "0px";
+            function toggleMenu() {
+                if (menulist.style.maxHeight === "0px") {
+                    menulist.style.maxHeight = "500px";
+                }
+                else {
+                    menulist.style.maxHeight = "0px";
+                }
+            }
+        // Scroll listener for Navbar
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+                menuIcon.classList.replace('text-white', 'text-slate-900');
+            } else {
+                nav.classList.remove('scrolled');
+                menuIcon.classList.replace('text-slate-900', 'text-white');
+            }
+        });
+    </script>
 
 </html>
