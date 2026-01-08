@@ -65,15 +65,9 @@ All pages are built with HTML and styled with custom CSS. ([GitHub][1])
 * Integrate a real **database for user accounts**
 * Enable **payment processing** for bookings
 
-# Screenshots
-
-*(Add screenshots of your pages here in future to show Home, About, Resorts, and Contact pages)*
 
 # License
 
 This project is open-source and available for learning and enhancement.
-
-
-If you want, I can also generate **GitHub badges** (e.g., HTML, CSS) and a **deployment link section** (e.g., GitHub Pages). Just ask!
 
 [1]: https://github.com/hurairasarfrazuet/group4-sereneescapes "GitHub - hurairasarfrazuet/group4-sereneescapes"
