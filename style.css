@@ -137,9 +137,11 @@
          width: 90px;
          text-align: left;
      }
+
      .loginbtn:hover i {
          color: var(--white);
      }
+
      .loginbtn:hover p {
          display: inline;
          font-size: 14px;
@@ -183,12 +185,14 @@
          border-radius: 15px;
          color: var(--white);
      }
+
      .loginbtn {
          width: auto;
          justify-content: center;
      }
-     .loginbtn p{
-            display: block;
+
+     .loginbtn p {
+         display: block;
      }
 
      .md-hidden {
@@ -550,7 +554,6 @@
  /* Contact */
  .footer-contact li {
      display: flex;
-     gap: 0.75rem;
      align-items: center;
      color: var(--slate-500);
      font-size: 0.95rem;
@@ -601,16 +604,17 @@
 
  /* Mobile tweaks */
  @media (max-width: 600px) {
-     .footer {
-         text-align: center;
-         align-items: flex-start;
-     }
-
-     .footer-contact li {
-         justify-content: start;
-     }
-
-     .footer-bottom {
-         flex-direction: column;
-     }
+    .footer {
+        text-align: center;
+        /* align-items: flex-start; */
+    }
+    .footer-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-bottom {
+        flex-direction: column;
+    }
  }
